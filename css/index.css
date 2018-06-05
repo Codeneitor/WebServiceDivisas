@@ -1,0 +1,16 @@
+.fa{
+	font-size: 70px;
+}
+.thumbnail{
+	width: 100%;
+}
+h2{
+	text-align: center;
+}
+table{
+	margin: 0px auto;
+}
+select{
+	margin-top: 5px;
+	margin-bottom: 15px;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="Content-Security-Policy" 
+         content="default-src *; style-src * 'self' 'unsafe-inline' 'unsafe-eval'; script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Codeneitor</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Codeneitor</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center">
+        <h1>Conversor De Divisas</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well">
+                    <i class="fa fa-exchange"></i>
+                    <table>
+                        <tr>
+                            <td><input id="fromAmount" type="text" size="10" value="1" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="from" class="form-control">
+                                    <option value="COP" selected>Pesos Colombianos (COP)</option>
+                                    <option value="USD">Dólar Americano (USD)</option>
+                                    <option value="EUR">Euro (EUR)</option>
+                                    <option value="JPY">Japanese Yen (JPY)</option>
+                                    <option value="CAD">Canadian Dollar (CAD)</option>
+                                    <option value="AUD">Australian Dollar (AUD)</option>
+                                    <option value="BGN">Bulgarian Lev (BGN)</option>
+                                    <option value="BRL">Brazilian Real (BRL)</option>
+                                    <option value="CHF">Swiss Franc (CHF)</option>
+                                    <option value="CNY">Chinese Yuan Renminbi (CNY)</option>
+                                    <option value="CZK">Czech Republic Koruna (CZK)</option>
+                                    <option value="DKK">Danish Krone (DKK)</option>
+                                    <option value="GBP">British Pound Sterling (GBP)</option>
+                                    <option value="HKD">Hong Kong Dollar (HKD)</option>
+                                    <option value="HUF">Hungarian Forint (HUF)</option>
+                                    <option value="IDR">Indonesian Rupiah (IDR)</option>
+                                    <option value="ILS">Israeli New Sheqel (ILS)</option>
+                                    <option value="INR">Indian Rupee (INR)</option>
+                                    <option value="ISK">Coronas Islandesas (ISK)</option>
+                                    <option value="KRW">South Korean Won (KRW)</option>
+                                    <option value="MXN">Mexican Peso (MXN)</option>
+                                    <option value="MYR">Malaysian Ringgit (MYR)</option>
+                                    <option value="NOK">Norwegian Krone (NOK)</option>
+                                    <option value="NZD">New Zealand Dollar (NZD)</option>
+                                    <option value="PHP">Philippine Peso (PHP)</option>
+                                    <option value="PLN">Polish Zloty (PLN)</option>
+                                    <option value="RON">Romanian Leu (RON)</option>
+                                    <option value="RUB">Russian Ruble (RUB)</option>
+                                    <option value="SEK">Swedish Krona (SEK)</option>
+                                    <option value="SGD">Singapore Dollar (SGD)</option>
+                                    <option value="THB">Thai Baht (THB)</option>
+                                    <option value="TRY">Turkish Lira (TRY)</option>
+                                    <option value="ZAR">South African Ran (ZAR)</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input id="toAmount" type="text" disabled="true" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="to"" class="form-control">
+                                    <option value="COP">Pesos Colombianos (COP)</option>
+                                    <option value="USD" selected>Dólar Americano (USD)</option>
+                                    <option value="EUR">Euro (EUR)</option>
+                                    <option value="JPY">Japanese Yen (JPY)</option>
+                                    <option value="CAD">Canadian Dollar (CAD)</option>
+                                    <option value="AUD">Australian Dollar (AUD)</option>
+                                    <option value="BGN">Bulgarian Lev (BGN)</option>
+                                    <option value="BRL">Brazilian Real (BRL)</option>
+                                    <option value="CHF">Swiss Franc (CHF)</option>
+                                    <option value="CNY">Chinese Yuan Renminbi (CNY)</option>
+                                    <option value="CZK">Czech Republic Koruna (CZK)</option>
+                                    <option value="DKK">Danish Krone (DKK)</option>
+                                    <option value="GBP">British Pound Sterling (GBP)</option>
+                                    <option value="HKD">Hong Kong Dollar (HKD)</option>
+                                    <option value="HUF">Hungarian Forint (HUF)</option>
+                                    <option value="IDR">Indonesian Rupiah (IDR)</option>
+                                    <option value="ILS">Israeli New Sheqel (ILS)</option>
+                                    <option value="INR">Indian Rupee (INR)</option>
+                                    <option value="ISK">Coronas Islandesas (ISK)</option>
+                                    <option value="KRW">South Korean Won (KRW)</option>
+                                    <option value="MXN">Mexican Peso (MXN)</option>
+                                    <option value="MYR">Malaysian Ringgit (MYR)</option>
+                                    <option value="NOK">Norwegian Krone (NOK)</option>
+                                    <option value="NZD">New Zealand Dollar (NZD)</option>
+                                    <option value="PHP">Philippine Peso (PHP)</option>
+                                    <option value="PLN">Polish Zloty (PLN)</option>
+                                    <option value="RON">Romanian Leu (RON)</option>
+                                    <option value="RUB">Russian Ruble (RUB)</option>
+                                    <option value="SEK">Swedish Krona (SEK)</option>
+                                    <option value="SGD">Singapore Dollar (SGD)</option>
+                                    <option value="THB">Thai Baht (THB)</option>
+                                    <option value="TRY">Turkish Lira (TRY)</option>
+                                    <option value="ZAR">South African Ran (ZAR)</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center">Usamos el WebService de <a target="blank" href="https://fixer.io">Fixer.io</a></p>
+        <p class="text-center">Copyright &copy; 2018 Codeneitor INC</p>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/webService.js"></script>
+</body>
+</html>
